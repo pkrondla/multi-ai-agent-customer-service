@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Multi-Agent Customer Service",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "python": ".venv/Scripts/python.exe",
+            "env": {
+                // Replace these with your own deployment's values (see README.md "Deploy the infrastructure").
+                // Do not commit real endpoints/keys here - this file is tracked by git.
+                "KEY_VAULT_URL": "https://<your-key-vault-name>.vault.azure.net/",
+                "USER_NAME": "Your Name",
+                "USER_ROLE": "Customer",
+                "REGION": "<your-azure-region>",
+                "MCP_SERVER_URL": "https://mcp.exa.ai/mcp",
+                "MCP_API_KEY": ""
+            }
+        },
+    ]
+}

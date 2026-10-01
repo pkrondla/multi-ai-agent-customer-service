@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables / secrets - never commit real endpoints, keys, or tokens
+.env
+.env.*
+!.env.example
+
+# Azure CLI / Bicep
+*.bicep.json
+.azure/
+
+# Copilot agent session/planning artifacts (local only, not part of the published project)
+.copilot-azure/
+
+# Editor/OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
